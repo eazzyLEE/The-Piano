@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyPiano</title>
+	<link rel="stylesheet" type="text/css" href="piano.css" />
+	<!--<link rel="stylesheet" id="theme-style" href="themes/blue.css" />
+	<script src="lib/jquery-1.8.1.min.js"></script>-->
+	<script src="lib/jquery-latest.js"></script>
+	<script src="piano.js"></script>
+	<script type="text/javascript" src="lib/touchEvents.js"></script>
+	<script src="audioManager.js"></script>
+	<!--<script src="appStorage.js"></script>-->
+</head>
+<body>
+	<div id="app">
+		<header>My Piano demo</header>
+		<div id="keyboard">
+			<div id="backboard"></div>
+			<div class="keys">
+							
+				<div data-note="2C" class="piano-key white"></div>
+				<div data-note="2C#" class="piano-key black"></div>
+				<div data-note="2D" class="piano-key white"></div>
+				<div data-note="2D#" class="piano-key black"></div>
+				<div data-note="2E" class="piano-key white"></div>
+				<div data-note="2F" class="piano-key white"></div>
+				<div data-note="2F#" class="piano-key black"></div>
+				<div data-note="2G" class="piano-key white"></div>
+				<div data-note="2G#" class="piano-key black"></div>
+				<div data-note="2A" class="piano-key white"></div>
+				<div data-note="2A#" class="piano-key black"></div>
+				<div data-note="2B" class="piano-key white"></div>
+				<!--third octave shown-->
+				<div data-note="3C" class="piano-key white"></div>
+				<div data-note="3C#" class="piano-key black"></div>
+				<div data-note="3D" class="piano-key white"></div>
+				<div data-note="3D#" class="piano-key black"></div>
+				<div data-note="3E" class="piano-key white"></div>
+				<div data-note="3F" class="piano-key white"></div>
+				<div data-note="3F#" class="piano-key black"></div>
+				<div data-note="3G" class="piano-key white"></div>
+				<div data-note="3G#" class="piano-key black"></div>
+				<div data-note="3A" class="piano-key white"></div>
+				<div data-note="3A#" class="piano-key black"></div>
+				<div data-note="3B" class="piano-key white"></div>
+				<div data-note="4C" class="piano-key white"></div>
+			</div>
+		</div>
+
+		<div class="controls">
+			<label for="sustain">Sustain: </label>
+			<input type="checkbox" id="sustain" checked /><br />
+
+			<label for="volume">Volume: </label>
+			<input type="range" id="volume" min="1" max="100" value="100" step="1" />
+		</div>
+	</div>
+</body>

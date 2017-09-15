@@ -1,0 +1,91 @@
+#app {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 4px;
+	background-color: #999;
+	/* browser specific gradients not shown */
+	background: linear-gradient(top, white, #003);
+}
+
+#app>footer {
+	position: absolute;
+	bottom: 0;
+	padding: 0.25em;
+	color: WhiteSmoke;
+}
+
+#main {
+	padding: 4px;
+	text-align: center;
+}
+
+#keyboard {
+	padding-bottom: 6px;
+	background-color: saddlebrown;
+	/* browser specific gradients not shown */
+	background: linear-gradient(top, #2A1506, saddlebrown);
+	box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.9);
+}
+
+#backboard {
+	position: relative;
+	height: 32px;
+	background-color: #2A1506;
+	border-bottom: 2px solid black;
+	box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.9);
+}
+
+#keyboard .piano-key {
+	display: inline-block;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	cursor: pointer;
+}
+
+#keyboard .piano-key.white {
+	width: 50px;
+	height: 300px;
+	background-color: ivory;
+	box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.7);
+	z-index: 1;
+}
+
+#keyboard .piano-key.black {
+	position: relative;
+	width: 40px;
+	height: 200px;
+	left: -23px;
+	margin-right: -46px;
+	vertical-align: top;
+	background-color: black;
+	box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.6);
+	z-index: 2;
+}
+
+.keyboard .piano-key.white.down {
+	background-color: #F1F1F0;
+	/*Browser gradients not shown*/
+	background: linear-gradient(top, ivory, #D5D5D0);
+	box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.6);
+}
+
+.keyboard .piano-key.black.down {
+	background-color: #111;
+	/*Browser gradients not shown*/
+	background: linear-gradient(top, black, #222);
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+.controls {
+	margin-top: 2em;
+	color: white;
+}
+.controls input {
+	vertical-align: middle;
+}
+.controls input[type=range] {
+	width: 10em;
+}

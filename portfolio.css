@@ -1,0 +1,74 @@
+body, h1, h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif;
+}
+.my-row-padding img {
+	margin-bottom: 12px;
+}
+.my-sidebar {
+	width: 120px;
+	background: #222;
+}
+#main {
+	margin-left: 120px;
+}
+.my-text-grey {
+	color: #757575 !important;
+}
+.my-padding-64 {
+	padding-top: 64px!important;
+	padding-bottom: 64px!important;
+}
+.my-justify {
+	text-align: justify!important;
+}
+.my-content {
+	max-width: 980px;
+	margin: auto;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+div {
+	display: block;
+}
+.my-black {
+	color: #fff!important;
+	background-color: #000!important;
+}
+html, body {
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+}
+body {
+	display: block;
+	margin: 8px;
+}
+html {
+	ms-text-size-adjust: 100%;
+	webkit-text-size-adjust: 100%;
+}
+.my-light-grey {
+	color: #000!important;
+	background-color: #f1f1f1!important;
+}
+.my-container:after, .my-container:before, .my-panel:after, .my-panel:before, .my-row:after, .my-row:before, .my-row-padding:after, .my-row-padding:before, .my-cell-row:before, .my-cell-row:after, .my-clear:after, .my-clear:before, .my-bar:before, .my-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+my.css:2
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+Pseudo ::after element
+my.css:71
+.my-container:after, .my-container:before, .my-panel:after, .my-panel:before, .my-row:after, .my-row:before, .my-row-padding:after, .my-row-padding:before, .my-cell-row:before, .my-cell-row:after, .my-clear:after, .my-clear:before, .my-bar:before, .my-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+my.css:2
+*, *:before, *:after {
+    box-sizing: inherit;
+}

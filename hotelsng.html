@@ -1,0 +1,172 @@
+head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Support component</title>
+    <style>
+        *{http://www.xanaxaxa.ca4ma/video-f30t546/3nata2rara1ca31la_bbc_la1ta3na1_ma3lafa_1n1la
+            box-sizing: border-box;
+        }
+        html,body{
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0px 10px 0px 10px;
+        }
+        .support-plan{
+            width: 190px;
+            height: 250px;
+            box-shadow: -4px 0px 22px rgba(0, 0, 0, 0.25);
+            border-radius: 15px;
+            display: inline-block;
+            position: relative;
+            padding: 0px;
+            overflow: hidden;
+            will-change: transform;
+            transition: transform 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+            
+        }
+        .support-plan:hover{
+            transform: translateY(10px);
+        }
+        .support-plan__price,.support-plan__body,.support-plan__button {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+        .support-plan__price{
+            height: 35%;
+            font-size: 24px;
+            font-weight: 600;
+            align-items: center;
+            background: linear-gradient(to bottom, #BBDEFB,#64B5F6, #1976D2);
+            color: #fff;
+        }
+        .support-plan__body{
+            height: 50%;
+            padding:20px 5px 3px 5px;;
+        }
+        .support-plan__body blockquote{
+            width: 100%;
+            border-left: 2px solid #ccc;
+            margin: 0;
+            padding: 5px;
+            height: min-content;
+        }
+        .support-plan__type{
+            align-self: center;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            top:30%;
+            width: 100%;
+        }
+        .support-plan__type_content{
+            padding: 5px 5px 3px 5px;
+            background: #BDBDBD;
+            width: 60%;
+            border-radius: 15px;
+            text-align: center;
+            text-transform: capitalize;
+            box-shadow: 0px 0px 2px 0px;
+            color: #ffffff;
+        }
+        .support-plan__button{
+            height: 15%;
+            text-transform: capitalize;
+            padding: 0px;
+            font-weight: 300;
+            color: #56CCF2;
+            padding: 5px;
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            font-size: 14px;
+        }
+        .support-plan__button a,button{
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            color: #56CCF2;
+        }
+
+        /**themes**/
+        .support-plan__type_bronze .support-plan__type_content{
+            background: #8C7853;
+            box-shadow: 0px 0px 2px 0px #8C7853;
+        }
+        .support-plan__type_bronze .support-plan__price{
+            background: linear-gradient(to bottom, #f6deb1,#e4cfa9, #dfc698);
+        }
+        .support-plan__type_bronze  .support-plan__body blockquote{
+            border-left: 2px solid #8C7853;
+        }
+        /*for silver*/
+        .support-plan__type_silzer .support-plan__type_content{
+            background:#C0C0C0;
+            box-shadow: 0px 0px 2px 0px #C0C0C0;
+        }
+        .support-plan__type_silzer .support-plan__price{
+            background: linear-gradient(to bottom, #eeeded,#e1dfdf, #dedada);
+        }
+        .support-plan__type_silzer .support-plan__body blockquote{
+            border-left: 2px solid #C0C0C0;
+        }
+        /*for gold*/
+        .support-plan__type_gold .support-plan__type_content{
+            background:#F2C94C;
+            box-shadow: 0px 0px 2px 0px #F2C94C;
+        }
+        .support-plan__type_gold .support-plan__price{
+            background: linear-gradient(to bottom, #faeabb,#ebdaa4, #f3db91);
+        }
+        .support-plan__type_gold .support-plan__body blockquote{
+            border-left: 2px solid #F2C94C;
+        }
+    </style>
+</head>
+<body>
+    <div class="support-plan support-plan__type_bronze">
+        <div class="support-plan__price"></div>
+        <div class="support-plan__type "><span class="support-plan__type_content">Bronze</span></div>
+        <div class="support-plan__body">
+            
+                   <blockquote>
+                        Plan text goes here 
+                   </blockquote>
+        </div>
+        <div class="support-plan__button"><a href="#">support now</a></div>
+    </div>
+    
+    <div class="support-plan support-plan__type_silzer">
+        <div class="support-plan__price"></div>
+        <div class="support-plan__type"><span class="support-plan__type_content">silzer</span></div>
+        <div class="support-plan__body">
+            
+                <blockquote>
+                        Plan text goes here 
+                </blockquote>
+        </div>
+        <div class="support-plan__button"><a href="#">support now</a></div>
+    </div>
+
+    <div class="support-plan support-plan__type_gold">
+        <div class="support-plan__price"></div>
+        <div class="support-plan__type"><span class="support-plan__type_content">Gold</span></div>
+        <div class="support-plan__body">
+            
+                <blockquote>
+                        Plan text goes here 
+                </blockquote>
+        </div>
+        <div class="support-plan__button"><a href="#">support now</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,171 @@
+
+
+
+1 <!DOCTYPE html> 
+2 
+ 
+3 <!-- 
+4 This is an HTML document. It contains information about how elements in the website 
+5 are arranged. In other words, it describes the layout of a website. 
+6  
+7 I can't wait to see the resumes you put together! 
+8  
+9 Cameron Pittman, Udacity Course Developer 
+10 --> 
+11 
+ 
+12 <!-- 
+13 The <head> of a website generally links to important resources the page will 
+14 need to load. You'll see a lot of <link>s to CSS files for styles and 
+15 <scripts> for JavaScript files to build interactions. 
+16 --> 
+17 <html> 
+18 <head> 
+19   <!-- This tells the browser how to read the document. --> 
+20   <meta charset="utf-8"> 
+21 
+ 
+22   <!-- Tells the browser what the title of this page should be. --> 
+23   <title>Resume</title> 
+24 
+ 
+25   <!-- Load the page styles. --> 
+26   <link href="css/style.css" rel="stylesheet"> 
+27 
+ 
+28 
+ 
+29 
+ 
+30   <!-- 
+31   Uncomment the <script> tag below when you're ready to add an interactive Google Map to your resume! 
+32   --> 
+33 <!-- <script src="http://maps.googleapis.com/maps/api/js?libraries=places"></script> --> 
+34 
+ 
+35   <meta name="viewport" content="width=device-width,initial-scale=1"> 
+36 </head> 
+37 <body> 
+38   <div id="main"> 
+39     Hello world!   <!-- You'll be deleting this line in the course --> 
+40 
+ 
+41     <!-- 
+42     Everything from here to the <script> tag below is the skeleton of your 
+43     website. Your code will add information to each of the sections of the 
+44     resume below. You can pretty easily figure out what each section will 
+45     display by looking at the id or at what's written between the <h2> tags. 
+46     --> 
+47     <div id="header" class="center-content clear-fix"> 
+48       <ul id="topContacts" class="flex-box"></ul> 
+49     </div> 
+50     <div style="clear: both;"></div> 
+51     <div id="workExperience" class="gray"> 
+52       <h2>Work Experience</h2> 
+53     </div> 
+54     <div id="projects"> 
+55       <h2>Projects</h2> 
+56     </div> 
+57     <div id="education" class="gray"> 
+58       <h2>Education</h2> 
+59     </div> 
+60     <div id="mapDiv"> 
+61       <h2>Where I've Lived and Worked</h2> 
+62     </div> 
+63     <div id="lets-connect" class="dark-gray"> 
+64       <h2 class="orange center-text">Let's Connect</h2> 
+65         <ul id="footerContacts" class="flex-box"> 
+66       </ul> 
+67     </div> 
+68   </div> 
+69 
+ 
+70   <!-- "HTML is loaded by the browser in the order it appears in the file. If the JavaScript is loaded first and it is supposed to affect the HTML below it, it might not work, as the JavaScript would be loaded before the HTML it is supposed to work on. Therefore, putting JavaScript near the bottom of the HTML page is often the best strategy." 
+71   https://developer.mozilla.org/en-US/Learn/Getting_started_with_the_web/JavaScript_basics --> 
+72 
+ 
+73    <!-- "Javascript assets, by default, tend to block any other parallel downloads from occurring. So, you can imagine if you have plenty of <script> tags in the head, calling on multiple external scripts will block the HTML from loading, thus greeting the user with a blank white screen, because no other content on your page will load until the JS files have completely loaded." 
+74     http://stackoverflow.com/questions/4396849/does-the-script-tag-position-in-html-affects-performance-of-the-webpage --> 
+75 
+ 
+76     <!-- 
+77   jQuery is a common JavaScript library for reading and making changes to the 
+78   Document Object Model (DOM). The DOM is a tree that contains information 
+79   about what is actually visible on a website. 
+80  
+81   While HTML is a static document, the browser converts HTML to the 
+82   DOM and the DOM can change. In fact, JavaScript's power comes from 
+83   its ability to manipulate the DOM, which is essentially a JavaScript 
+84   object. When JavaScript makes something interesting happen on a 
+85   website, it's likely the action happened because JavaScript changed 
+86   the DOM. jQuery is fast and easy to use, but it doesn't do anything 
+87   you can't accomplish with vanilla (regular) JavaScript. 
+88   --> 
+89   <script src="js/jQuery.js"></script> 
+90 
+ 
+91   <!-- More on helper.js in the class --> 
+92   <script src="js/helper.js"></script> 
+93 
+ 
+94   <!-- 
+95   The next line tells the browser where to download the JavaScript file you'll be 
+96   writing. In resumeBuilder.js, you'll be writing code that builds the resume 
+97   dynamically when this website, index.html, is opened. 
+98   --> 
+99   <script src="js/resumeBuilder.js"></script> 
+100 
+ 
+101 
+ 
+102   <!-- 
+103   These scripts are written in JavaScript. You'll be breaking them down as part of 
+104   a quiz. Essentially, the next few lines are checking to see if you have not 
+105   changed each section of the resume. If you have not made any changes to a section 
+106   of the resume, then that part of the resume does not show up. More on this in the 
+107   course. 
+108   --> 
+109 
+ 
+110   <script> 
+111     // Notice how all of a sudden there's JavaScript inside this HTML 
+112     // document? You can write JavaScript between <script> tags. At the end of your 
+113     // JavaScript, don't forget the closing script tag with the slash (/). 
+114  
+115  
+116     // Also, this is a JavaScript style comment. You can comment in JavaScript with: 
+117  
+118     //   two slashes for all following characters on a single line, or 
+119  
+120     /* 
+121         an opening and closing set of slash asterisks for block comments. 
+122     */ 
+123  
+124  
+125     if(document.getElementsByClassName('flex-item').length === 0) { 
+126       document.getElementById('topContacts').style.display = 'none'; 
+127     } 
+128     if(document.getElementsByTagName('h1').length === 0) { 
+129       document.getElementById('header').style.display = 'none'; 
+130     } 
+131     if(document.getElementsByClassName('work-entry').length === 0) { 
+132       document.getElementById('workExperience').style.display = 'none'; 
+133     } 
+134     if(document.getElementsByClassName('project-entry').length === 0) { 
+135       document.getElementById('projects').style.display = 'none'; 
+136     } 
+137     if(document.getElementsByClassName('education-entry').length === 0) { 
+138       document.getElementById('education').style.display = 'none'; 
+139     } 
+140     if(document.getElementsByClassName('flex-item').length === 0) { 
+141       document.getElementById('lets-connect').style.display = 'none'; 
+142     } 
+143     if(document.getElementById('map') === null) { 
+144       document.getElementById('mapDiv').style.display = 'none'; 
+145     } 
+146   </script> 
+147 </body> 
+148 </html> 
+
+
+
